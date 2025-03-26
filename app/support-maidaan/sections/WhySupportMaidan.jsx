@@ -1,5 +1,5 @@
 import { FaFutbol, FaGlobe, FaBookOpen, FaCheckCircle } from "react-icons/fa";
-import future from "@/images/about-images/maidaan-2018.webp";
+import future from "@/app/images/about-images/maidaan-2018.webp";
 import Image from "next/image";
 
 const benefits = [
@@ -66,8 +66,8 @@ export default function WhySupportMaidaan() {
             Corporate & Large-Scale Sponsorships
           </h3>
           <p className="text-gray-600 mt-4">
-            Want to make a larger impact? We offer custom sponsorship packages for
-            companies and donors who want to fund:
+            Want to make a larger impact? We offer custom sponsorship packages
+            for companies and donors who want to fund:
           </p>
 
           <ul className="mt-6 space-y-4 text-gray-700">
@@ -82,9 +82,9 @@ export default function WhySupportMaidaan() {
               training.
             </li>
             <li>
-              🏟️ <strong>Infrastructure & Equipment Support</strong> – Contribute
-              to building training facilities, stadiums, and providing essential
-              equipment for aspiring players.
+              🏟️ <strong>Infrastructure & Equipment Support</strong> –
+              Contribute to building training facilities, stadiums, and
+              providing essential equipment for aspiring players.
             </li>
           </ul>
           <p className="text-gray-600 mt-6">

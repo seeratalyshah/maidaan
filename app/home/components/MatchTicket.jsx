@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FaTrophy } from "react-icons/fa";
 
-// import bgImage from "@/images/bg-img.png"; 
+// import bgImage from "@/app/images/bg-img.png";
 
 const MatchTicket = ({ item }) => {
   return (
@@ -26,7 +26,9 @@ const MatchTicket = ({ item }) => {
         {/* Match Teams */}
         <div className="flex items-center mt-2">
           <Image src={item.teamOne} alt="Atleticos" className="w-6 h-6 mr-2" />
-          <h3 className="font-semibold md:font-bold text-sm md:text-xl">{item.players}</h3>
+          <h3 className="font-semibold md:font-bold text-sm md:text-xl">
+            {item.players}
+          </h3>
           <Image src={item.teamTwo} alt="Salford" className="w-6 h-6 ml-2" />
         </div>
 

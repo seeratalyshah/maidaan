@@ -1,8 +1,8 @@
 import Image from "next/image";
-import headCoach from "@/images/about-images/head-coach.webp";
-import assistantCoach from "@/images/about-images/assistance-coach.webp";
-import sajidaliCoach from "@/images/about-images/sajidali-coach.webp";
-import shahidfareedCoach from "@/images/about-images/shahidfareed-coach.webp";
+import headCoach from "@/app/images/about-images/head-coach.webp";
+import assistantCoach from "@/app/images/about-images/assistance-coach.webp";
+import sajidaliCoach from "@/app/images/about-images/sajidali-coach.webp";
+import shahidfareedCoach from "@/app/images/about-images/shahidfareed-coach.webp";
 
 export default function CoachesSection() {
   const coaches = [
@@ -15,7 +15,9 @@ export default function CoachesSection() {
   return (
     <section className="px-4 md:px-16 lg:px-24">
       <div className="mx-auto">
-      <h1 className="text-4xl md:text-5xl font-bebas mb-10 text-center">OUR COACHES</h1>
+        <h1 className="text-4xl md:text-5xl font-bebas mb-10 text-center">
+          OUR COACHES
+        </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {coaches.map((coach, index) => (
             <div key={index} className="bg-white">

@@ -1,13 +1,13 @@
 import React from "react";
-import news1 from "@/images/media-images/news1.webp";
-import news7 from "@/images/media-images/news7.jpg";
-import news8 from "@/images/media-images/news8.jpg";
+import news1 from "@/app/images/media-images/news1.webp";
+import news7 from "@/app/images/media-images/news7.jpg";
+import news8 from "@/app/images/media-images/news8.jpg";
 import Image from "next/image";
-import geoLogo from "@/images/news-logos/geo-logo.png";
-import peLogo from "@/images/news-logos/pe-logo.png";
-import theNewsLogo from "@/images/news-logos/the-news-logo.png";
-import nrk from "@/images/news-logos/nrk.png";
-import news9 from "@/images/media-images/news9.jpg";
+import geoLogo from "@/app/images/news-logos/geo-logo.png";
+import peLogo from "@/app/images/news-logos/pe-logo.png";
+import theNewsLogo from "@/app/images/news-logos/the-news-logo.png";
+import nrk from "@/app/images/news-logos/nrk.png";
+import news9 from "@/app/images/media-images/news9.jpg";
 
 const featuredNews = [
   {
@@ -59,7 +59,7 @@ const FeaturedMedia = () => {
     <section className="px-4 md:px-16 lg:px-24" id="featured-news">
       <div className="mx-auto">
         <div className="mb-8">
-        <h1 className="text-4xl md:text-5xl font-bebas">Latest Headlines</h1>
+          <h1 className="text-4xl md:text-5xl font-bebas">Latest Headlines</h1>
         </div>
 
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">

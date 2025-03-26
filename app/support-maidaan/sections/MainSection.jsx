@@ -1,6 +1,6 @@
 import Image from "next/image";
-import logo from "@/images/home-images/maidaan-home-logo.png"; 
-import supportMainImage from "@/images/support-images/support-hero-img.webp"; 
+import logo from "@/app/images/home-images/maidaan-home-logo.png";
+import supportMainImage from "@/app/images/support-images/support-hero-img.webp";
 
 const MainSection = () => {
   return (
@@ -14,7 +14,11 @@ const MainSection = () => {
             className="shadow-lg h-[620px] object-cover"
           />
           <div className="absolute bottom-0 right-0 transform translate-x-8 translate-y-8">
-            <Image src={logo} alt="Atleticos Logo" className="w-24 md:w-32 rounded-lg bg-white shadow-lg border p-2" />
+            <Image
+              src={logo}
+              alt="Atleticos Logo"
+              className="w-24 md:w-32 rounded-lg bg-white shadow-lg border p-2"
+            />
           </div>
         </div>
 
@@ -36,9 +40,15 @@ const MainSection = () => {
           </p>
           <ul className="mt-4 leading-relaxed list-disc pl-5 marker:text-green-600">
             <li className="text-gray-600">Grassroots Football Development</li>
-            <li className="text-gray-600">International Tournaments & Exposure</li>
-            <li className="text-gray-600">Education & Birth Registration for Street-Connected Children</li>
-            <li className="text-gray-600">Vocational Training & Life Skills Development</li>
+            <li className="text-gray-600">
+              International Tournaments & Exposure
+            </li>
+            <li className="text-gray-600">
+              Education & Birth Registration for Street-Connected Children
+            </li>
+            <li className="text-gray-600">
+              Vocational Training & Life Skills Development
+            </li>
           </ul>
         </div>
       </div>

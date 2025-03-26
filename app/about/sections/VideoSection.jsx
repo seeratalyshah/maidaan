@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import slide1 from "@/images/about-images/media.webp";
+import slide1 from "@/app/images/about-images/media.webp";
 import { IoTriangle } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
 
@@ -40,24 +40,31 @@ export default function VideoSection() {
         </div>
 
         {/* Video Modal */}
-      {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-          <div className="relative bg-black w-[90%] md:w-[60%] lg:w-[50%]">
-            <button
-              onClick={() => setIsOpen(false)}
-              className="absolute -top-9 -right-9 bg-green-600 text-white p-2 rounded-full text-lg shadow-lg hover:bg-green-700 transition-all"
-            >
-              <RxCross2 />
-            </button>
-            <div className="relative pt-[56.25%]">
-              <video className="absolute top-0 left-0 w-full h-full" controls autoPlay>
-                <source src="https://s3.eu-central-1.amazonaws.com/strategytracker.net/assets-mh/maidaan/videos/iamsomebody.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+        {isOpen && (
+          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+            <div className="relative bg-black w-[90%] md:w-[60%] lg:w-[50%]">
+              <button
+                onClick={() => setIsOpen(false)}
+                className="absolute -top-9 -right-9 bg-green-600 text-white p-2 rounded-full text-lg shadow-lg hover:bg-green-700 transition-all"
+              >
+                <RxCross2 />
+              </button>
+              <div className="relative pt-[56.25%]">
+                <video
+                  className="absolute top-0 left-0 w-full h-full"
+                  controls
+                  autoPlay
+                >
+                  <source
+                    src="https://s3.eu-central-1.amazonaws.com/strategytracker.net/assets-mh/maidaan/videos/iamsomebody.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
       </div>
     </section>
   );

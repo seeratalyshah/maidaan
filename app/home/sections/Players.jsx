@@ -9,31 +9,32 @@ import {
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
-import sahilGull from "@/images/maidaan-players/sahil-gull-goalkeeper.webp";
-import ubaidUllahkhan from "@/images/maidaan-players/ubaid-ullah-khan-defender.webp";
-import aliAsif from "@/images/maidaan-players/ali-asif-midfielder.webp";
-import abidAli from "@/images/maidaan-players/abid-ali-defender.webp";
-import ahmadRazaKhan from "@/images/maidaan-players/ahmed-raza-khan-midfielder.webp";
-import aadilAliKhan from "@/images/maidaan-players/Aadil-Ali-Khan-GoalKeeper.webp";
-import abdulGhani from "@/images/maidaan-players/AbdulGhani-Forward.webp";
-import abdulWahab from "@/images/maidaan-players/Abdul-Wahab-Midfielder.webp";
-import asadNasir from "@/images/maidaan-players/Asad-Nasir-Defender.webp";
-import daniyal from "@/images/maidaan-players/Daniyal-Midfielder.webp";
-import faisalAfridi from "@/images/maidaan-players/Faisal-Afridi-Forward.webp";
-import hamzaGul from "@/images/maidaan-players/Hamza-Gul-Defender.webp";
-import muhammadAdil from "@/images/maidaan-players/Muhammad-Adeel-Defender.webp";
-import muhammadAli from "@/images/maidaan-players/Muhammad-Ali-Midfielder.webp";
-import muhammadAryan from "@/images/maidaan-players/Muhammad-Aryan-GoalKeeper.webp";
-import muhammadEssa from "@/images/maidaan-players/Muhammad-Essa-Forward.webp";
-import muhammadJunaid from "@/images/maidaan-players/Muhammad-Junaid-Midfielder.webp";
-import muhammadKashif from "@/images/maidaan-players/Muhammad-Kashif-Forward.webp";
-import muhammadKhan from "@/images/maidaan-players/Muhammad-Khan-Midfielder.webp";
-import muhammadUsama from "@/images/maidaan-players/Muhammad-Usama-Midfielder.webp";
-import owaisAhmad from "@/images/maidaan-players/Owais-Ahmad-Midfielder.webp";
-import saudAhmad from "@/images/maidaan-players/Saud-Ahmad-Forward.webp";
-import shahidAnjum from "@/images/maidaan-players/Shahid-Anjum-Forward.webp";
-import shameerAli from "@/images/maidaan-players/Shahmeer-Ali-Forward.webp";
-import tufailShinwari from "@/images/maidaan-players/Tufail-Shinwari-Forward.webp";
+
+import sahilGull from "@/app/images/maidaan-players/sahil-gull-goalkeeper.webp";
+import ubaidUllahkhan from "@/app/images/maidaan-players/ubaid-ullah-khan-defender.webp";
+import aliAsif from "@/app/images/maidaan-players/ali-asif-midfielder.webp";
+import abidAli from "@/app/images/maidaan-players/abid-ali-defender.webp";
+import ahmadRazaKhan from "@/app/images/maidaan-players/ahmed-raza-khan-midfielder.webp";
+import aadilAliKhan from "@/app/images/maidaan-players/Aadil-Ali-Khan-GoalKeeper.webp";
+import abdulGhani from "@/app/images/maidaan-players/AbdulGhani-Forward.webp";
+import abdulWahab from "@/app/images/maidaan-players/Abdul-Wahab-Midfielder.webp";
+import asadNasir from "@/app/images/maidaan-players/Asad-Nasir-Defender.webp";
+import daniyal from "@/app/images/maidaan-players/Daniyal-Midfielder.webp";
+import faisalAfridi from "@/app/images/maidaan-players/Faisal-Afridi-Forward.webp";
+import hamzaGul from "@/app/images/maidaan-players/Hamza-Gul-Defender.webp";
+import muhammadAdil from "@/app/images/maidaan-players/Muhammad-Adeel-Defender.webp";
+import muhammadAli from "@/app/images/maidaan-players/Muhammad-Ali-Midfielder.webp";
+import muhammadAryan from "@/app/images/maidaan-players/Muhammad-Aryan-GoalKeeper.webp";
+import muhammadEssa from "@/app/images/maidaan-players/Muhammad-Essa-Forward.webp";
+import muhammadJunaid from "@/app/images/maidaan-players/Muhammad-Junaid-Midfielder.webp";
+import muhammadKashif from "@/app/images/maidaan-players/Muhammad-Kashif-Forward.webp";
+import muhammadKhan from "@/app/images/maidaan-players/Muhammad-Khan-Midfielder.webp";
+import muhammadUsama from "@/app/images/maidaan-players/Muhammad-Usama-Midfielder.webp";
+import owaisAhmad from "@/app/images/maidaan-players/Owais-Ahmad-Midfielder.webp";
+import saudAhmad from "@/app/images/maidaan-players/Saud-Ahmad-Forward.webp";
+import shahidAnjum from "@/app/images/maidaan-players/Shahid-Anjum-Forward.webp";
+import shameerAli from "@/app/images/maidaan-players/Shahmeer-Ali-Forward.webp";
+import tufailShinwari from "@/app/images/maidaan-players/Tufail-Shinwari-Forward.webp";
 
 const players = [
   { id: 1, name: "Ali Asif", position: "MIDFIELDER", image: aliAsif },

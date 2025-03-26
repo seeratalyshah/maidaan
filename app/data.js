@@ -1,25 +1,25 @@
-// import atleticos from "@/images/atleticos.png";
-// import barcode from "@/images/atleticos.png";
-// import salford from "@/images/atleticos.png";
-import news1 from "@/images/media-images/news1.webp";
-// import video1 from "@/images/video1.jpg";
-// import video2 from "@/images/video2.JPG";
-// import video3 from "@/images/video3.JPG";
-// import video4 from "@/images/video4.jpg";
-// import video5 from "@/images/video5.JPG";
-import news7 from "@/images/media-images//news7.jpg";
-import news9 from "@/images/media-images/news9.jpg";
-import nrk from "@/images/news-logos/nrk.png";
-import geoLogo from "@/images/news-logos/geo-logo.png";
-import theNewsLogo from "@/images/news-logos/the-news-logo.png";
-import news8 from "@/images/media-images/news8.jpg";
-import euroLogo from "@/images/news-logos/euro-logo.png";
-import qatar from "@/images/media-images/qatar-2023.webp";
-import isbSCWC from "@/images/media-images/isb-scwc.webp";
-import isbLogo from "@/images/news-logos/islamabad.webp";
-import peLogo from "@/images/news-logos/pe-logo.png";
-import inpLogo from "@/images/news-logos/inp-logo.png";
-import inpNews from "@/images/media-images/inp-news.webp";
+// import atleticos from "@/app/images/atleticos.png";
+// import barcode from "@/app/images/atleticos.png";
+// import salford from "@/app/images/atleticos.png";
+import news1 from "@/app/images/media-images/news1.webp";
+// import video1 from "@/app/images/video1.jpg";
+// import video2 from "@/app/images/video2.JPG";
+// import video3 from "@/app/images/video3.JPG";
+// import video4 from "@/app/images/video4.jpg";
+// import video5 from "@/app/images/video5.JPG";
+import news7 from "@/app/images/media-images//news7.jpg";
+import news9 from "@/app/images/media-images/news9.jpg";
+import nrk from "@/app/images/news-logos/nrk.png";
+import geoLogo from "@/app/images/news-logos/geo-logo.png";
+import theNewsLogo from "@/app/images/news-logos/the-news-logo.png";
+import news8 from "@/app/images/media-images/news8.jpg";
+import euroLogo from "@/app/images/news-logos/euro-logo.png";
+import qatar from "@/app/images/media-images/qatar-2023.webp";
+import isbSCWC from "@/app/images/media-images/isb-scwc.webp";
+import isbLogo from "@/app/images/news-logos/islamabad.webp";
+import peLogo from "@/app/images/news-logos/pe-logo.png";
+import inpLogo from "@/app/images/news-logos/inp-logo.png";
+import inpNews from "@/app/images/media-images/inp-news.webp";
 
 export const newsCards = [
   {

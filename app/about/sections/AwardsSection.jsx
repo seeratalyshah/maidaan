@@ -1,12 +1,12 @@
 import Image from "next/image";
-import maidaan2014 from "@/images/about-images/maidan-2014.webp";
-import maidaan2015 from "@/images/about-images/maidan-2015.webp";
-import maidaan2016 from "@/images/about-images/maidan-2016.webp";
-import maidaan2017 from "@/images/about-images/maidan-2017.webp";
-import maidaan2018 from "@/images/about-images/maidaan-2018.webp";
-import maidaan2022 from "@/images/about-images/maidaan-2022.webp";
-import maidaan2023 from "@/images/about-images/maidaan-2023.webp";
-import maidaan2024 from "@/images/about-images/maidaan-2024.webp";
+import maidaan2014 from "@/app/images/about-images/maidan-2014.webp";
+import maidaan2015 from "@/app/images/about-images/maidan-2015.webp";
+import maidaan2016 from "@/app/images/about-images/maidan-2016.webp";
+import maidaan2017 from "@/app/images/about-images/maidan-2017.webp";
+import maidaan2018 from "@/app/images/about-images/maidaan-2018.webp";
+import maidaan2022 from "@/app/images/about-images/maidaan-2022.webp";
+import maidaan2023 from "@/app/images/about-images/maidaan-2023.webp";
+import maidaan2024 from "@/app/images/about-images/maidaan-2024.webp";
 
 const awards = [
   {
@@ -32,22 +32,23 @@ const awards = [
   },
   {
     year: "2018",
-    title: 'Champions of XI Nations Tournament Russia - The Future Depends On You',
+    title:
+      "Champions of XI Nations Tournament Russia - The Future Depends On You",
     image: maidaan2018,
   },
   {
     year: "2022",
-    title: 'Runner Up Street Child World Cup Qatar',
+    title: "Runner Up Street Child World Cup Qatar",
     image: maidaan2022,
   },
   {
     year: "2023",
-    title: 'Norway Cup',
+    title: "Norway Cup",
     image: maidaan2023,
   },
   {
     year: "2024",
-    title: 'Honor by Chief of Army Staff',
+    title: "Honor by Chief of Army Staff",
     image: maidaan2024,
   },
 ];
@@ -73,7 +74,9 @@ const AwardsSection = () => {
               className="w-full h-[270px] object-cover"
             />
             <div className="p-4">
-              <p className="mt-4 mb-2 text-green-600 text-xl font-semibold">{award.year}</p>
+              <p className="mt-4 mb-2 text-green-600 text-xl font-semibold">
+                {award.year}
+              </p>
               <h3 className="text-lg font-bold uppercase">{award.title}</h3>
             </div>
           </div>

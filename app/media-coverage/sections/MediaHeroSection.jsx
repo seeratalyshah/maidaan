@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import maidaanMedia1 from "@/images/media-images/maidaanmedia1.jpeg";
-import maidaanMedia3 from "@/images/media-images/maidaanmedia3.jpeg";
-import maidaanMedia2 from "@/images/media-images/maidaanmedia2.jpg";
+import maidaanMedia1 from "@/app/images/media-images/maidaanmedia1.jpeg";
+import maidaanMedia3 from "@/app/images/media-images/maidaanmedia3.jpeg";
+import maidaanMedia2 from "@/app/images/media-images/maidaanmedia2.jpg";
 import { useEffect, useState } from "react";
 
 const MediaHeroSection = () => {
@@ -22,19 +22,38 @@ const MediaHeroSection = () => {
       <div className="grid sm:grid-cols-3 grid-rows-2 gap-[5px] h-full">
         {/* Collage Layout */}
         <div className="relative col-span-2 row-span-2 sm:block hidden">
-          <Image src={maidaanMedia1} layout="fill" objectFit="cover" alt="Catcher" className="object-[50%_70%]"/>
+          <Image
+            src={maidaanMedia1}
+            layout="fill"
+            objectFit="cover"
+            alt="Catcher"
+            className="object-[50%_70%]"
+          />
         </div>
         <div className="relative sm:block hidden">
-          <Image src={maidaanMedia3} layout="fill" objectFit="cover" alt="Pitcher" />
+          <Image
+            src={maidaanMedia3}
+            layout="fill"
+            objectFit="cover"
+            alt="Pitcher"
+          />
         </div>
         <div className="relative">
-          <Image src={maidaanMedia2} layout="fill" objectFit="cover" alt="Batter" className="sm:object-[50%_50%]"/>
+          <Image
+            src={maidaanMedia2}
+            layout="fill"
+            objectFit="cover"
+            alt="Batter"
+            className="sm:object-[50%_50%]"
+          />
         </div>
       </div>
 
       {/* Hero Text Section */}
       <div className="absolute bottom-0 left-0 right-0 bg-green-900 bg-opacity-90 px-8 py-10 text-center">
-        <div className="absolute left-4 top-4 text-green-600 text-2xl md:text-5xl">⚾</div>
+        <div className="absolute left-4 top-4 text-green-600 text-2xl md:text-5xl">
+          ⚾
+        </div>
 
         <h1 className="text-xl sm:text-3xl md:text-5xl font-bebas mb-4 text-white">
           Maidaan in the Spotlight –{" "}

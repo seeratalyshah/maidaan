@@ -1,6 +1,6 @@
 import Image from "next/image";
-import logo from "@/images/home-images/maidaan-home-logo.png"; 
-import whoWeAre from "@/images/about-images/who-we-are.webp"; 
+import logo from "@/app/images/home-images/maidaan-home-logo.png";
+import whoWeAre from "@/app/images/about-images/who-we-are.webp";
 
 const AboutSection = () => {
   return (
@@ -14,14 +14,21 @@ const AboutSection = () => {
             className="shadow-lg"
           />
           <div className="absolute bottom-0 right-0 transform translate-x-8 translate-y-8">
-            <Image src={logo} alt="Atleticos Logo" className="w-24 md:w-32 rounded-lg bg-white shadow-lg border p-2" />
+            <Image
+              src={logo}
+              alt="Atleticos Logo"
+              className="w-24 md:w-32 rounded-lg bg-white shadow-lg border p-2"
+            />
           </div>
         </div>
 
         {/* Right Side - Text Content */}
         <div className="w-full md:w-1/2 text-center md:text-left mt-8 md:mt-0">
           <h2 className="text-3xl md:text-4xl uppercase leading-snug">
-            <span className="text-green-600 text-4xl md:text-5xl font-bebas"> Who We Are</span>
+            <span className="text-green-600 text-4xl md:text-5xl font-bebas">
+              {" "}
+              Who We Are
+            </span>
           </h2>
           <p className="mt-4 text-gray-600 leading-relaxed">
             Maidaan is Pakistan’s largest grassroots football initiative,

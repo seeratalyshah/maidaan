@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import icon from "@/images/ailton.png";
+import icon from "@/app/images/ailton.png";
 
 const teams = [
   {

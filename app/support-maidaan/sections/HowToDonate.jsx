@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { FaDonate } from "react-icons/fa";
 import Image from "next/image";
-import runnerUp from "@/images/support-images/runnerup-2018.jpg";
+import runnerUp from "@/app/images/support-images/runnerup-2018.jpg";
 
 export default function HowToDonate() {
   return (
@@ -10,9 +10,9 @@ export default function HowToDonate() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
         {/* Left Side - Image */}
         <div className="md:w-1/2">
-          <Image 
+          <Image
             src={runnerUp}
-            alt="Donate to support" 
+            alt="Donate to support"
             className="w-full h-auto shadow-lg"
           />
         </div>

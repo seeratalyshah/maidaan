@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import maidaanBlog from "@/images/media-images/maidaanblog.jpeg";
+import maidaanBlog from "@/app/images/media-images/maidaanblog.jpeg";
 
 const HeroSection = () => {
   return (
@@ -12,7 +12,7 @@ const HeroSection = () => {
         layout="fill"
         objectFit="cover"
         quality={90}
-         className="object-top mt-[95px]"
+        className="object-top mt-[95px]"
       />
 
       {/* Overlay */}

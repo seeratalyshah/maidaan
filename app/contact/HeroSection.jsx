@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import maidanContact from "@/images/media-images/maidaancontact.webp";
+import maidanContact from "@/app/images/media-images/maidaancontact.webp";
 
 const HeroSection = () => {
   return (

@@ -3,12 +3,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import fifaLogo from "@/images/news-logos/fifa-logo.png";
-import un from "@/images/news-logos/un.jpg";
-import arabNews from "@/images/news-logos/arab-news.jpg";
-import Jazeera from "@/images/news-logos/jazeera.webp";
-import euroLogo from "@/images/news-logos/euro-logo.png";
-import nrk from "@/images/news-logos/nrk.png";
+import fifaLogo from "@/app/images/news-logos/fifa-logo.png";
+import un from "@/app/images/news-logos/un.jpg";
+import arabNews from "@/app/images/news-logos/arab-news.jpg";
+import Jazeera from "@/app/images/news-logos/jazeera.webp";
+import euroLogo from "@/app/images/news-logos/euro-logo.png";
+import nrk from "@/app/images/news-logos/nrk.png";
 
 const mediaCategories = [
   "All",
@@ -100,7 +100,9 @@ const InternationalMedia = () => {
     <section className="bg-[#F5F5F5] p-4 md:p-16 lg:p-24">
       <div className="mx-auto">
         <div className="mb-8">
-        <h1 className="text-4xl md:text-5xl font-bebas">Global Recognition</h1>
+          <h1 className="text-4xl md:text-5xl font-bebas">
+            Global Recognition
+          </h1>
         </div>
 
         {/* Dropdown Filter */}

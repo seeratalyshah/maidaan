@@ -1,9 +1,9 @@
-import players from "@/images/media-images/news1.webp";
-import playersSelected from "@/images/about-images/players_selected.webp";
-import urban from "@/images/about-images/urban.webp";
-import global from "@/images/about-images/global.webp";
-import training from "@/images/about-images/training.webp";
-import legal from "@/images/media-images/news5.jpeg";
+import players from "@/app/images/media-images/news1.webp";
+import playersSelected from "@/app/images/about-images/players_selected.webp";
+import urban from "@/app/images/about-images/urban.webp";
+import global from "@/app/images/about-images/global.webp";
+import training from "@/app/images/about-images/training.webp";
+import legal from "@/app/images/media-images/news5.jpeg";
 import Image from "next/image";
 
 const benefits = [
@@ -11,8 +11,7 @@ const benefits = [
     id: 1,
     icon: players,
     title: "1836+",
-    description:
-      "children participated in nationwide trials",
+    description: "children participated in nationwide trials",
   },
 
   {
@@ -27,29 +26,25 @@ const benefits = [
     id: 4,
     icon: urban,
     title: "26+",
-    description:
-      "cities covered, from urban centers to remote communities",
+    description: "cities covered, from urban centers to remote communities",
   },
   {
     id: 2,
     icon: global,
     title: "FIFA/AFC-aligned development pipeline",
-    description:
-      "preparing young players for global football",
+    description: "preparing young players for global football",
   },
   {
     id: 5,
     icon: legal,
     title: "Legal and educational support",
-    description:
-      "ensuring every child’s right to identity and learning",
+    description: "ensuring every child’s right to identity and learning",
   },
   {
     id: 6,
     icon: training,
     title: "Vocational training",
-    description:
-      "bridging the gap between football and future employment",
+    description: "bridging the gap between football and future employment",
   },
 ];
 
@@ -82,19 +77,19 @@ export default WhyMaidaan;
 
 // Benefit Card Component
 function BenefitCard({ item }) {
-    return (
-      <div className="bg-white shadow-md text-center">
-        <Image
-          src={item.icon}
-          alt="icon"
-          width={500} 
-          height={200}
-          className="w-full h-[200px] object-cover"
-        />
-        <h3 className="font-bold text-lg mt-4 uppercase py-1 px-4">{item.title}</h3>
-        <p className="text-gray-600 px-4 pb-4">{item.description}</p>
-      </div>
-    );
-  }
-  
-  
+  return (
+    <div className="bg-white shadow-md text-center">
+      <Image
+        src={item.icon}
+        alt="icon"
+        width={500}
+        height={200}
+        className="w-full h-[200px] object-cover"
+      />
+      <h3 className="font-bold text-lg mt-4 uppercase py-1 px-4">
+        {item.title}
+      </h3>
+      <p className="text-gray-600 px-4 pb-4">{item.description}</p>
+    </div>
+  );
+}

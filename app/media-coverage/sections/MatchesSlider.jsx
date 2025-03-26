@@ -13,11 +13,11 @@ import {
   HiOutlineArrowNarrowRight,
 } from "react-icons/hi";
 import MatchCard from "../../home/components/MatchCard";
-import muslimhandsLogo from "@/images/home-images/maidaan-muslimhands-logo.webp";
-import grassRootLogo from "@/images/home-images/maidaan-grassroot-logo.webp";
-import norwaycupLogo from "@/images/home-images/maidaan-norway-cup-logo.png";
-import scuLogo from "@/images/home-images/maidaan-scu-logo.webp";
-import maidaanLogo from "@/images/home-images/maidaan-home-logo.png";
+import muslimhandsLogo from "@/app/images/home-images/maidaan-muslimhands-logo.webp";
+import grassRootLogo from "@/app/images/home-images/maidaan-grassroot-logo.webp";
+import norwaycupLogo from "@/app/images/home-images/maidaan-norway-cup-logo.png";
+import scuLogo from "@/app/images/home-images/maidaan-scu-logo.webp";
+import maidaanLogo from "@/app/images/home-images/maidaan-home-logo.png";
 
 export const matches = [
   {
