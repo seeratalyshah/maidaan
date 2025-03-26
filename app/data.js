@@ -1,17 +1,17 @@
-import news1 from "../public/images/media-images/news1.webp";
-import news7 from "../public/images/media-images//news7.jpg";
-import news9 from "../public/images/media-images/news9.jpg";
-import nrk from "../public/images/news-logos/nrk.png";
-import geoLogo from "../public/images/news-logos/geo-logo.png";
-import theNewsLogo from "../public/images/news-logos/the-news-logo.png";
-import news8 from "../public/images/media-images/news8.jpg";
-import euroLogo from "../public/images/news-logos/euro-logo.png";
-import qatar from "../public/images/media-images/qatar-2023.webp";
-import isbSCWC from "../public/images/media-images/isb-scwc.webp";
-import isbLogo from "../public/images/news-logos/islamabad.webp";
-import peLogo from "../public/images/news-logos/pe-logo.png";
-import inpLogo from "../public/images/news-logos/inp-logo.png";
-import inpNews from "../public/images/media-images/inp-news.webp";
+import news1 from "@/app/images/media-images/news1.webp";
+import news7 from "@/app/images/media-images//news7.jpg";
+import news9 from "@/app/images/media-images/news9.jpg";
+import nrk from "@/app/images/news-logos/nrk.png";
+import geoLogo from "@/app/images/news-logos/geo-logo.png";
+import theNewsLogo from "@/app/images/news-logos/the-news-logo.png";
+import news8 from "@/app/images/media-images/news8.jpg";
+import euroLogo from "@/app/images/news-logos/euro-logo.png";
+import qatar from "@/app/images/media-images/qatar-2023.webp";
+import isbSCWC from "@/app/images/media-images/isb-scwc.webp";
+import isbLogo from "@/app/images/news-logos/islamabad.webp";
+import peLogo from "@/app/images/news-logos/pe-logo.png";
+import inpLogo from "@/app/images/news-logos/inp-logo.png";
+import inpNews from "@/app/images/media-images/inp-news.webp";
 
 export const newsCards = [
   {

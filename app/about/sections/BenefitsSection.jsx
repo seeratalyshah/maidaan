@@ -1,8 +1,8 @@
 "use client";
-import grassroot from "../../../public/images/about-images/grassroot.webp";
-import expanding from "../../../public/images/about-images/expanding.webp";
-import womenFootball from "../../../public/images/about-images/women-football.webp";
-import sustainable from "../../../public/images/about-images/maidaanfuture2.webp";
+import grassroot from "@/app/images/about-images/grassroot.webp";
+import expanding from "@/app/images/about-images/expanding.webp";
+import womenFootball from "@/app/images/about-images/women-football.webp";
+import sustainable from "@/app/images/about-images/maidaanfuture2.webp";
 import Image from "next/image";
 import Link from "next/link";
 

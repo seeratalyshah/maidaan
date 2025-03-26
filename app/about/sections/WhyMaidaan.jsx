@@ -1,9 +1,9 @@
-import players from "../../../public/images/media-images/news1.webp";
-import playersSelected from "../../../public/images/about-images/players_selected.webp";
-import urban from "../../../public/images/about-images/urban.webp";
-import global from "../../../public/images/about-images/global.webp";
-import training from "../../../public/images/about-images/training.webp";
-import legal from "../../../public/images/media-images/news5.jpeg";
+import players from "@/app/images/media-images/news1.webp";
+import playersSelected from "@/app/images/about-images/players_selected.webp";
+import urban from "@/app/images/about-images/urban.webp";
+import global from "@/app/images/about-images/global.webp";
+import training from "@/app/images/about-images/training.webp";
+import legal from "@/app/images/media-images/news5.jpeg";
 import Image from "next/image";
 
 const benefits = [

@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import maidaanMedia1 from "../../../public/images/media-images/maidaanmedia1.jpeg";
-import maidaanMedia3 from "../../../public/images/media-images/maidaanmedia3.jpeg";
-import maidaanMedia2 from "../../../public/images/media-images/maidaanmedia2.jpg";
+import maidaanMedia1 from "@/app/images/media-images/maidaanmedia1.jpeg";
+import maidaanMedia3 from "@/app/images/media-images/maidaanmedia3.jpeg";
+import maidaanMedia2 from "@/app/images/media-images/maidaanmedia2.jpg";
 import { useEffect, useState } from "react";
 
 const MediaHeroSection = () => {

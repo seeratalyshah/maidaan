@@ -1,6 +1,6 @@
 import Image from "next/image";
-import logo from "../../..//public/images/home-images/maidaan-home-logo.png";
-import whoWeAre from "../../..//public/images/about-images/who-we-are.webp";
+import logo from "@/app/images/home-images/maidaan-home-logo.png";
+import whoWeAre from "@/app/images/about-images/who-we-are.webp";
 
 const AboutSection = () => {
   return (

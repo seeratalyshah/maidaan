@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import heroImage from "../../../public/images/support-images/support-bg.jpg";
-import kidImage from "../../../public/images/maidaan-players/Shahmeer-Ali-Forward.webp"; // Replace with your image
+import heroImage from "@/app/images/support-images/support-bg.jpg";
+import kidImage from "@/app/images/maidaan-players/Shahmeer-Ali-Forward.webp"; // Replace with your image
 import Link from "next/link";
 
 export default function HeroSection() {

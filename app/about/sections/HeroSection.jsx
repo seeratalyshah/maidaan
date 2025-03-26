@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import aboutHeroImage from "../../../public/images/about-images/about-hero-image.webp";
+import aboutHeroImage from "@/app/images/about-images/about-hero-image.webp";
 
 const HeroSection = () => {
   return (

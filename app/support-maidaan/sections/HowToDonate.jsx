@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { FaDonate } from "react-icons/fa";
 import Image from "next/image";
-import runnerUp from "../../../public/images/support-images/runnerup-2018.jpg";
+import runnerUp from "@/app/images/support-images/runnerup-2018.jpg";
 
 export default function HowToDonate() {
   return (
