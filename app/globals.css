@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: var(--font-geist-sans), sans-serif;
+  }
+  
+  .font-bebas {
+    font-family: var(--font-bebas-neue), sans-serif;
+  }
+}
+
+.hover-bg:hover{
+  background-color: green !important;
+  color: white !important;
+}
+
+.custom-dropdown:hover{
+ background-color: silver !important;
+}
+
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex !important;
+  flex-direction: row !important; 
+}
