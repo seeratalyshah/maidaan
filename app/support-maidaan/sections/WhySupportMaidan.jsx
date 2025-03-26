@@ -1,5 +1,5 @@
 import { FaFutbol, FaGlobe, FaBookOpen, FaCheckCircle } from "react-icons/fa";
-import future from "@/app/images/about-images/maidaan-2018.webp";
+import future from "@/public/images/about-images/maidaan-2018.webp";
 import Image from "next/image";
 
 const benefits = [

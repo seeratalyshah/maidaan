@@ -1,13 +1,13 @@
 import React from "react";
-import news1 from "@/app/images/media-images/news1.webp";
-import news7 from "@/app/images/media-images/news7.jpg";
-import news8 from "@/app/images/media-images/news8.jpg";
+import news1 from "@/public/images/media-images/news1.webp";
+import news7 from "@/public/images/media-images/news7.jpg";
+import news8 from "@/public/images/media-images/news8.jpg";
 import Image from "next/image";
-import geoLogo from "@/app/images/news-logos/geo-logo.png";
-import peLogo from "@/app/images/news-logos/pe-logo.png";
-import theNewsLogo from "@/app/images/news-logos/the-news-logo.png";
-import nrk from "@/app/images/news-logos/nrk.png";
-import news9 from "@/app/images/media-images/news9.jpg";
+import geoLogo from "@/public/images/news-logos/geo-logo.png";
+import peLogo from "@/public/images/news-logos/pe-logo.png";
+import theNewsLogo from "@/public/images/news-logos/the-news-logo.png";
+import nrk from "@/public/images/news-logos/nrk.png";
+import news9 from "@/public/images/media-images/news9.jpg";
 
 const featuredNews = [
   {

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FaTrophy } from "react-icons/fa";
 
-// import bgImage from "@/app/images/bg-img.png";
+// import bgImage from "@/public/images/bg-img.png";
 
 const MatchTicket = ({ item }) => {
   return (

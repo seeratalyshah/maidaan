@@ -1,12 +1,12 @@
 import Image from "next/image";
-import maidaan2014 from "@/app/images/about-images/maidan-2014.webp";
-import maidaan2015 from "@/app/images/about-images/maidan-2015.webp";
-import maidaan2016 from "@/app/images/about-images/maidan-2016.webp";
-import maidaan2017 from "@/app/images/about-images/maidan-2017.webp";
-import maidaan2018 from "@/app/images/about-images/maidaan-2018.webp";
-import maidaan2022 from "@/app/images/about-images/maidaan-2022.webp";
-import maidaan2023 from "@/app/images/about-images/maidaan-2023.webp";
-import maidaan2024 from "@/app/images/about-images/maidaan-2024.webp";
+import maidaan2014 from "@/public/images/about-images/maidan-2014.webp";
+import maidaan2015 from "@/public/images/about-images/maidan-2015.webp";
+import maidaan2016 from "@/public/images/about-images/maidan-2016.webp";
+import maidaan2017 from "@/public/images/about-images/maidan-2017.webp";
+import maidaan2018 from "@/public/images/about-images/maidaan-2018.webp";
+import maidaan2022 from "@/public/images/about-images/maidaan-2022.webp";
+import maidaan2023 from "@/public/images/about-images/maidaan-2023.webp";
+import maidaan2024 from "@/public/images/about-images/maidaan-2024.webp";
 
 const awards = [
   {

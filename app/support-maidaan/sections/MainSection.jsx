@@ -1,6 +1,6 @@
 import Image from "next/image";
-import logo from "@/app/images/home-images/maidaan-home-logo.png";
-import supportMainImage from "@/app/images/support-images/support-hero-img.webp";
+import logo from "@/public/images/home-images/maidaan-home-logo.png";
+import supportMainImage from "@/public/images/support-images/support-hero-img.webp";
 
 const MainSection = () => {
   return (

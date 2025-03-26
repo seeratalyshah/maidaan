@@ -7,7 +7,7 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 import { FiSearch } from "react-icons/fi";
 import { FaUserCircle } from "react-icons/fa";
-import logo from "@/app/images/layout-images/maidan-white-logo.png";
+import logo from "@/public/images/layout-images/maidan-white-logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

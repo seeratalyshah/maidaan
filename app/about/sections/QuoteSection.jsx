@@ -1,8 +1,8 @@
 import Image from "next/image";
-import somebody1 from "@/app/images/about-images/somebody1.webp";
-import somebody2 from "@/app/images/about-images/somebody2.webp";
-import somebody3 from "@/app/images/about-images/somebody3.webp";
-import somebody4 from "@/app/images/about-images/somebody4.webp";
+import somebody1 from "@/public/images/about-images/somebody1.webp";
+import somebody2 from "@/public/images/about-images/somebody2.webp";
+import somebody3 from "@/public/images/about-images/somebody3.webp";
+import somebody4 from "@/public/images/about-images/somebody4.webp";
 
 const QuoteSection = () => {
   return (

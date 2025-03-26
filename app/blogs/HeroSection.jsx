@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import maidaanBlog from "@/app/images/media-images/maidaanblog.jpeg";
+import maidaanBlog from "@/public/images/media-images/maidaanblog.jpeg";
 
 const HeroSection = () => {
   return (
