@@ -3,12 +3,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import fifaLogo from "@/public/images/news-logos/fifa-logo.png";
-import un from "@/public/images/news-logos/un.jpg";
-import arabNews from "@/public/images/news-logos/arab-news.jpg";
-import Jazeera from "@/public/images/news-logos/jazeera.webp";
-import euroLogo from "@/public/images/news-logos/euro-logo.png";
-import nrk from "@/public/images/news-logos/nrk.png";
+import fifaLogo from "../../../public/images/news-logos/fifa-logo.png";
+import un from "../../../public/images/news-logos/un.jpg";
+import arabNews from "../../../public/images/news-logos/arab-news.jpg";
+import Jazeera from "../../../public/images/news-logos/jazeera.webp";
+import euroLogo from "../../../public/images/news-logos/euro-logo.png";
+import nrk from "../../../public/images/news-logos/nrk.png";
 
 const mediaCategories = [
   "All",

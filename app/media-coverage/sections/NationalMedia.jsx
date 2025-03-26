@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import geoLogo from "@/public/images/news-logos/geo-logo.png";
-import nationLogo from "@/public/images/news-logos/nation-logo.png";
-import theNewsLogo from "@/public/images/news-logos/the-news-logo.png";
-import isbLogo from "@/public/images/news-logos/islamabad.webp";
-import inpLogo from "@/public/images/news-logos/inp-logo.png";
-import peLogo from "@/public/images/news-logos/pe-logo.png";
+import geoLogo from "../../../public/images/news-logos/geo-logo.png";
+import nationLogo from "../../../public/images/news-logos/nation-logo.png";
+import theNewsLogo from "../../../public/images/news-logos/the-news-logo.png";
+import isbLogo from "../../../public/images/news-logos/islamabad.webp";
+import inpLogo from "../../../public/images/news-logos/inp-logo.png";
+import peLogo from "../../../public/images/news-logos/pe-logo.png";
 
 const mediaCategories = [
   "All",

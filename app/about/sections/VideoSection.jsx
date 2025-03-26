@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import slide1 from "@/public/images/about-images/media.webp";
+import slide1 from "../../../public/images/about-images/media.webp";
 import { IoTriangle } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
 

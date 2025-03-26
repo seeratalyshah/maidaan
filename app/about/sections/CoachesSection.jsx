@@ -1,8 +1,8 @@
 import Image from "next/image";
-import headCoach from "@/public/images/about-images/head-coach.webp";
-import assistantCoach from "@/public/images/about-images/assistance-coach.webp";
-import sajidaliCoach from "@/public/images/about-images/sajidali-coach.webp";
-import shahidfareedCoach from "@/public/images/about-images/shahidfareed-coach.webp";
+import headCoach from "../../../public/images/about-images/head-coach.webp";
+import assistantCoach from "../../../public/images/about-images/assistance-coach.webp";
+import sajidaliCoach from "../../../public/images/about-images/sajidali-coach.webp";
+import shahidfareedCoach from "../../../public/images/about-images/shahidfareed-coach.webp";
 
 export default function CoachesSection() {
   const coaches = [

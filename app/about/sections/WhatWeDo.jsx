@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FaFutbol } from "react-icons/fa";
-import whatwedo1 from "@/public/images/about-images/whatwedo1.webp";
-import whatwedo2 from "@/public/images/about-images/whatwedo2.webp";
+import whatwedo1 from "../../../public/images/about-images/whatwedo1.webp";
+import whatwedo2 from "../../../public/images/about-images/whatwedo2.webp";
 
 const WhatWeDo = () => {
   return (

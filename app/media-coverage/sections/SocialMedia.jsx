@@ -5,16 +5,16 @@ import FacebookPostCard from "../components/FacebookPostCard";
 import TikTokPostCard from "../components/TikTokPostCard";
 import YoutubePostCard from "../components/YoutubePostCard";
 import LinkedInPost from "../components/LinkedInPost";
-import logo from "@/public/images/home-images/maidaan-home-logo.png";
-import firstPost from "@/public/images/media-images/firstpost.jpeg";
-import secondPost from "@/public/images/media-images/secondpost.jpeg";
-import thirdPost from "@/public/images/media-images/thirdpost.jpeg";
-import fbPost1 from "@/public/images/media-images/fbPost1.jpg";
-import fbPost2 from "@/public/images/media-images/fbPost2.jpg";
-import fbPost3 from "@/public/images/media-images/fbPost3.jpg";
-import linkPost1 from "@/public/images/media-images/linkPost1.jpg";
-import linkPost2 from "@/public/images/media-images/linkPost2.png";
-import linkPost3 from "@/public/images/media-images/linkPost3.png";
+import logo from "../../../public/images/home-images/maidaan-home-logo.png";
+import firstPost from "../../../public/images/media-images/firstpost.jpeg";
+import secondPost from "../../../public/images/media-images/secondpost.jpeg";
+import thirdPost from "../../../public/images/media-images/thirdpost.jpeg";
+import fbPost1 from "../../../public/images/media-images/fbPost1.jpg";
+import fbPost2 from "../../../public/images/media-images/fbPost2.jpg";
+import fbPost3 from "../../../public/images/media-images/fbPost3.jpg";
+import linkPost1 from "../../../public/images/media-images/linkPost1.jpg";
+import linkPost2 from "../../../public/images/media-images/linkPost2.png";
+import linkPost3 from "../../../public/images/media-images/linkPost3.png";
 
 const SocialMedia = () => {
   const [instagramPosts, setInstagramPosts] = useState([]);

@@ -1,6 +1,6 @@
 import React from "react";
-import bgImage from "@/public/images/layout-images/footer-bg.jpg";
-import bgImage2 from "@/public/images/layout-images/footer-bg2.png";
+import bgImage from "../../../public/images/layout-images/footer-bg.jpg";
+import bgImage2 from "../../../public/images/layout-images/footer-bg2.png";
 import {
   FaFacebook,
   FaInstagram,
@@ -8,7 +8,7 @@ import {
   FaYoutube,
   FaLinkedin,
 } from "react-icons/fa";
-import logo from "@/public/images/layout-images/maidan-white-logo.png";
+import logo from "../../../public/images/layout-images/maidan-white-logo.png";
 import Image from "next/image";
 import Link from "next/link";
 
