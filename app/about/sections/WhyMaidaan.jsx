@@ -13,7 +13,6 @@ const benefits = [
     title: "1836+",
     description: "children participated in nationwide trials",
   },
-
   {
     id: 3,
     icon: playersSelected,
@@ -21,7 +20,6 @@ const benefits = [
     description:
       "players selected for elite training and international exposure",
   },
-
   {
     id: 4,
     icon: urban,
