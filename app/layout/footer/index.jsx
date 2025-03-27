@@ -140,7 +140,8 @@ const Footer = () => {
           {/* Copyright */}
           <div className="mt-10 text-sm">
             <span className="text-gray-400">
-            © {new Date().getFullYear()} Maidaan. All rights reserved. Powered by Muslim Hands.
+              © {new Date().getFullYear()} Maidaan. All rights reserved. Powered
+              by Muslim Hands.
             </span>
           </div>
         </div>
