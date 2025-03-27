@@ -23,14 +23,15 @@ const bebasNeue = Bebas_Neue({
 });
 
 export const metadata = {
-  title: "Miadaan – A Muslim Hands Initiative: Empowering Children Through Sports",
-  description: "An initiative by Muslim Hands to uplift street children through the power of sports.",
+  title:
+    "Miadaan – A Muslim Hands Initiative: Empowering Children Through Sports",
+  description:
+    "An initiative by Muslim Hands to uplift street children through the power of sports.",
   icons: {
     icon: "/maidaan-home-logo.png", // Remove "/public/"
     shortcut: "/maidaan-home-logo.png",
   },
 };
-
 
 export default function RootLayout({ children }) {
   return (
