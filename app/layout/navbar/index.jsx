@@ -33,7 +33,6 @@ const Navbar = () => {
     { name: "Support", path: "/support-maidaan" },
     { name: "Blogs", path: "/blogs" },
     { name: "Player Registration", path: "/player-registration" },
-    { name: "Contact", path: "/contact" },
   ];
 
   return (
@@ -75,14 +74,11 @@ const Navbar = () => {
 
         {/* Icons */}
         <div className="hidden lg:flex items-center gap-6">
-          <FaUserCircle
-            size={24}
-            className="cursor-pointer text-white hover:text-green-600"
-          />
-          <FiSearch
-            size={22}
-            className="cursor-pointer text-white hover:text-green-600"
-          />
+          <Link href="/contact">
+            <button className=" bg-green-600 text-white px-6 py-2 flex items-center gap-2 hover:bg-green-700 transition">
+              Contact
+            </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Icon */}
@@ -125,14 +121,14 @@ const Navbar = () => {
           </ul>
           {/* Mobile Icons */}
           <div className="flex items-center gap-6 pt-4">
-            <FaUserCircle
-              size={24}
-              className="cursor-pointer text-black hover:text-green-600"
-            />
-            <FiSearch
-              size={22}
-              className="cursor-pointer text-black hover:text-green-600"
-            />
+            <Link href="/contact">
+              <button
+                onClick={() => setMenuOpen(false)}
+                className=" bg-green-600 text-white px-6 py-2 flex items-center gap-2 hover:bg-green-700 transition"
+              >
+                Contact
+              </button>
+            </Link>
           </div>
         </div>
       </div>

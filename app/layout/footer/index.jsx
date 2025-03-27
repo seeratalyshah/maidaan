@@ -140,7 +140,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="mt-10 text-sm">
             <span className="text-gray-400">
-              Like-themes © All Rights Reserved - 2024
+            © {new Date().getFullYear()} Maidaan. All rights reserved. Powered by Muslim Hands.
             </span>
           </div>
         </div>
