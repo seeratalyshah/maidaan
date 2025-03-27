@@ -24,11 +24,11 @@ const bebasNeue = Bebas_Neue({
 
 export const metadata = {
   title:
-    "Miadaan – A Muslim Hands Initiative: Empowering Children Through Sports",
+    "Maidaan – A Muslim Hands Initiative: Empowering Children Through Sports",
   description:
     "An initiative by Muslim Hands to uplift street children through the power of sports.",
   icons: {
-    icon: "/maidaan-home-logo.png", // Remove "/public/"
+    icon: "/maidaan-home-logo.png", 
     shortcut: "/maidaan-home-logo.png",
   },
 };
