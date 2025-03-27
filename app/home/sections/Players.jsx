@@ -10,7 +10,7 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import sahilGull from "@/app/images/maidaan-players/sahil-gull-goalkeeper.webp";
+import sahilGull from "@/app/images/maidaan-players/sahil-gull-goalKeeper.webp";
 import ubaidUllahkhan from "@/app/images/maidaan-players/ubaid-ullah-khan-defender.webp";
 import aliAsif from "@/app/images/maidaan-players/ali-asif-midfielder.webp";
 import abidAli from "@/app/images/maidaan-players/abid-ali-defender.webp";
