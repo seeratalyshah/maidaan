@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-screen flex items-center justify-center">
+    <section className="relative w-full h-[60vh] md:h-screen flex items-center justify-center">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -34,7 +34,7 @@ export default function HeroSection() {
         </div>
 
         {/* Right Text */}
-        <div className="flex-1 text-white text-left pb-20 ml-4">
+        <div className="flex-1 text-white text-left pb-20 ml-0 md:ml-4">
           <h1 className="text-3xl md:text-5xl lg:text-7xl w-[300px] md:w-[800px] uppercase tracking-[0.1rem] font-bebas mb-1">
             <span className="text-green-500">Support </span>Maidaan
           </h1>

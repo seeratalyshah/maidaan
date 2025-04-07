@@ -33,7 +33,7 @@ export default function BlogSection() {
   return (
     <div className="flex flex-col gap-16 md:gap-24 lg:gap-32">
       <HeroSection />
-      <div className="px-4 md:px-16 lg:px-24 mb-16 md:mb-24 lg:mb-32 xl:px-72">
+      <div className="px-4 md:px-16 lg:px-24 mb-16 md:mb-24 lg:mb-32 xl:px-72 mt-16">
         {/* Search and Filter Bar */}
         <div className="flex flex-col md:flex-row items-center justify-between mb-6 gap-4 w-full">
           <div className="w-full md:w-1/3">

@@ -24,15 +24,15 @@ export default function VideoSection() {
 
         {/* Content (Centered) */}
         <div className="relative z-10 flex justify-between items-center text-center px-2 w-full max-w-7xl mx-auto">
-          <h2 className="max-w-2xl text-left text-5xl md:text-7xl font-bebas">
+          <h2 className="max-w-2xl text-left text-3xl md:text-7xl font-bebas">
             I am somebody <br />
             Watch the amazing trailer of street child world cup
           </h2>
 
           {/* Play Button with Smooth Hover Animation */}
           <button onClick={() => setIsOpen(true)} className="group">
-            <div className="bg-white p-8 rounded-full flex items-center justify-center transition-all duration-200 ease-in-out group-hover:p-2">
-              <div className="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center">
+            <div className="bg-white p-4 md:p-8 rounded-full flex items-center justify-center transition-all duration-200 ease-in-out group-hover:p-2">
+              <div className="bg-green-600 w-10 h-10 md:w-16 md:h-16 rounded-full flex items-center justify-center">
                 <IoTriangle size={24} className="text-white" />
               </div>
             </div>

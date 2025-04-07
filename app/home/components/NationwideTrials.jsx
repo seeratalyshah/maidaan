@@ -201,13 +201,17 @@ export default function NationwideTrials() {
     <div className="max-w-4xl mx-auto">
       <div className="flex gap-4 mb-4">
         <button
-          className={`px-4 py-2 rounded ${filter === "Upcoming" ? "bg-green-600 text-white" : "bg-gray-200"}`}
+          className={`px-4 py-2 rounded ${
+            filter === "Upcoming" ? "bg-green-600 text-white" : "bg-gray-200"
+          }`}
           onClick={upcommingClick}
         >
           Upcoming Trials
         </button>
         <button
-          className={`px-4 py-2 rounded ${filter === "Closed" ? "bg-green-600 text-white" : "bg-gray-200"}`}
+          className={`px-4 py-2 rounded ${
+            filter === "Closed" ? "bg-green-600 text-white" : "bg-gray-200"
+          }`}
           onClick={closedClick}
         >
           Past Trials
@@ -215,40 +219,48 @@ export default function NationwideTrials() {
       </div>
       {trialsData.length > 0 ? (
         <>
-          <table className="w-full border-collapse border border-gray-300">
-            <thead>
-              <tr className="bg-gray-100">
-                <th className="border border-gray-300 px-4 py-2">Location</th>
-                <th className="border border-gray-300 px-4 py-2">Date</th>
-                <th className="border border-gray-300 px-4 py-2">Category</th>
-                <th className="border border-gray-300 px-4 py-2">Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              {currentRows.map((trial) => (
-                <tr key={trial.id} className="text-center">
-                  <td className="border border-gray-300 px-4 py-2 text-sm text-nowrap">
-                    {trial.location}
-                  </td>
-                  <td className="border border-gray-300 px-4 py-2 text-sm text-nowrap">
-                    {trial.date}
-                  </td>
-                  <td className="border border-gray-300 px-4 py-2 text-sm text-nowrap">
-                    {trial.category}
-                  </td>
-                  <td className="border border-gray-300 px-4 py-2 text-sm">
-                    {trial.status === "Upcoming" ? (
-                      <a href={trial.link} className="text-green-600 hover:underline">
-                        Register
-                      </a>
-                    ) : (
-                      <span className="text-gray-500">Closed</span>
-                    )}
-                  </td>
+          {/* Scrollable container for table */}
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse border border-gray-300 min-w-[600px]">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="border border-gray-300 px-4 py-2">Location</th>
+                  <th className="border border-gray-300 px-4 py-2">Date</th>
+                  <th className="border border-gray-300 px-4 py-2">Category</th>
+                  <th className="border border-gray-300 px-4 py-2">Status</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {currentRows.map((trial) => (
+                  <tr key={trial.id} className="text-center">
+                    <td className="border border-gray-300 px-4 py-2 text-sm whitespace-nowrap">
+                      {trial.location}
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2 text-sm whitespace-nowrap">
+                      {trial.date}
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2 text-sm whitespace-nowrap">
+                      {trial.category}
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2 text-sm">
+                      {trial.status === "Upcoming" ? (
+                        <a
+                          href={trial.link}
+                          className="text-green-600 hover:underline"
+                        >
+                          Register
+                        </a>
+                      ) : (
+                        <span className="text-gray-500">Closed</span>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Pagination controls */}
           <div className="flex justify-center mt-4 gap-2">
             <button
               className="px-3 py-1 bg-green-600 text-white rounded disabled:opacity-50"
@@ -257,18 +269,24 @@ export default function NationwideTrials() {
             >
               Prev
             </button>
-            <span className="px-3 py-1">Page {currentPage} of {totalPages}</span>
+            <span className="px-3 py-1">
+              Page {currentPage} of {totalPages}
+            </span>
             <button
               className="px-3 py-1 bg-green-600 text-white rounded disabled:opacity-50"
               disabled={currentPage === totalPages}
-              onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+              onClick={() =>
+                setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+              }
             >
               Next
             </button>
           </div>
         </>
       ) : (
-        <p className="text-gray-500">No {filter.toLowerCase()} trials available.</p>
+        <p className="text-gray-500">
+          No {filter.toLowerCase()} trials available.
+        </p>
       )}
     </div>
   );

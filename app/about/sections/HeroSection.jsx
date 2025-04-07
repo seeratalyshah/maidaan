@@ -4,7 +4,7 @@ import aboutHeroImage from "@/app/images/about-images/about-hero-image.webp";
 
 const HeroSection = () => {
   return (
-    <div className="relative w-full h-[80vh]">
+    <div className="relative w-full h-[40vh] md:h-[80vh]">
       {/* Background Image */}
       <Image
         src={aboutHeroImage}
@@ -23,7 +23,7 @@ const HeroSection = () => {
           <h1 className="text-3xl md:text-7xl lg:text-8xl text-center w-[300px] md:w-[900px] uppercase tracking-[0.1rem] font-bebas text-white">
             About Us – Maidaan
           </h1>
-          <h1 className="text-xl md:text-4xl uppercase leading-tight text-white font-bebas">
+          <h1 className="text-xl md:text-4xl uppercase leading-tight text-white font-bebas px-4">
             The Future of Football and Social Change in Pakistan
           </h1>
         </div>

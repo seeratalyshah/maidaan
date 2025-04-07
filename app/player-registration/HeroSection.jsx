@@ -4,7 +4,7 @@ import heroImage from "@/app/images/media-images/resgistration-bg.webp";
 
 const HeroSection = () => {
   return (
-    <div className="relative w-full h-[60vh]">
+    <div className="relative w-full h-[40vh] md:h-[60vh]">
       {/* Background Image */}
       <Image
         src={heroImage}

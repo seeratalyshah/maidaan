@@ -86,7 +86,7 @@ export default function PlayerRegistrationForm() {
       <HeroSection />
 
       <div className="max-w-3xl mx-auto mt-10">
-        <div className="p-6 border border-gray-300 rounded-lg bg-white mb-4">
+        <div className="p-6 border border-gray-300 rounded-lg bg-white mb-4 mx-4">
            <h1 className="text-md md:text-xl font-semibold leading-tight text-green-600 mb-4">
             All shortlisted players must register digitally before the training
             camp starts.
@@ -98,7 +98,7 @@ export default function PlayerRegistrationForm() {
             accurately.
           </p>
         </div>
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 px-4">
           {formFields.map(({ label, name, type, options }) => (
             <div
               key={name}

@@ -13,7 +13,7 @@ const AboutSection = () => {
             alt="Player with Trophy"
             className="shadow-lg"
           />
-          <div className="absolute bottom-0 right-0 transform translate-x-8 translate-y-8">
+          <div className="absolute bottom-0 right-10 md:right-0 transform translate-x-8 translate-y-8">
             <Image
               src={logo}
               alt="Atleticos Logo"

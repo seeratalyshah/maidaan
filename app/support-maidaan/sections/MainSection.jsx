@@ -11,9 +11,9 @@ const MainSection = () => {
           <Image
             src={supportMainImage}
             alt="Player with Trophy"
-            className="shadow-lg h-[620px] object-cover"
+            className="shadow-lg h-[400px] lg:h-[620px] object-cover"
           />
-          <div className="absolute bottom-0 right-0 transform translate-x-8 translate-y-8">
+          <div className="absolute bottom-0 right-10 md:right-0 transform translate-x-8 translate-y-8">
             <Image
               src={logo}
               alt="Atleticos Logo"
