@@ -19,21 +19,29 @@ const QuoteSection = () => {
           <Image
             src={somebody1}
             alt="Coach Ryan Mitchell"
+            width={"auto"}
+            height={"auto"}
             className="w-full h-[100%] object-cover"
           />
           <Image
             src={somebody2}
             alt="Coach Ryan Mitchell"
+            width={"auto"}
+            height={"auto"}
             className="w-full h-[100%] object-cover"
           />
           <Image
             src={somebody3}
             alt="Coach Ryan Mitchell"
+            width={"auto"}
+            height={"auto"}
             className="w-full h-[100%] object-cover"
           />
           <Image
             src={somebody4}
             alt="Coach Ryan Mitchell"
+            width={"auto"}
+            height={"auto"}
             className="w-full h-[100%] object-cover"
           />
         </div>

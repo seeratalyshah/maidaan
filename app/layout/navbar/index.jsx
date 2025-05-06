@@ -14,7 +14,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50); 
+      setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -72,8 +72,13 @@ const Navbar = () => {
 
         {/* Icons */}
         <div className="hidden lg:flex items-center gap-6">
+          {/* <Link href="/admin/login">
+            <button className=" border rounded text-white px-4 py-1 flex items-center gap-2 hover:bg-white/20 transition">
+              Admin Login
+            </button>
+          </Link> */}
           <Link href="/contact">
-            <button className=" bg-green-600 text-white px-6 py-2 flex items-center gap-2 hover:bg-green-700 transition">
+            <button className=" bg-green-600 rounded text-white px-4 py-1 flex items-center gap-2 hover:bg-green-700 transition">
               Contact
             </button>
           </Link>

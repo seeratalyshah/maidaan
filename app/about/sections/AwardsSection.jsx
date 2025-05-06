@@ -71,6 +71,8 @@ const AwardsSection = () => {
             <Image
               src={award.image}
               alt={award.title}
+              width={"auto"}
+              height={"auto"}
               className="w-full h-[270px] object-cover"
             />
             <div className="p-4">

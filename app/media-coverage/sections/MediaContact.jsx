@@ -98,10 +98,7 @@ const MediaContact = () => {
         <div className="mt-10 text-center">
           <p className="text-gray-700">For direct press inquiries, contact:</p>
           <p className="text-lg font-semibold text-green-700">
-            press@maidaan.com
-          </p>
-          <p className="text-lg font-semibold text-green-700">
-            +92 300 1234567
+            press@maidaan.org.uk
           </p>
         </div>
       </div>

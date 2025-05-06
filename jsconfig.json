@@ -1,7 +1,41 @@
+// jsconfig.json  (or tsconfig.json if you later add TS)
 {
   "compilerOptions": {
-    "paths": {
-      "@/*": ["./*"]
-    }
-  }
+    "baseUrl": ".", // ← add this
+    "paths": { // ← move inside compilerOptions
+      "@/*": [
+        "*"
+      ] // "@/lib/db" → "lib/db"
+    },
+    /* --- the rest of your options unchanged --- */
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "**/*",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

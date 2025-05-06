@@ -52,6 +52,8 @@ const WhatWeDo = () => {
           <Image
             src={whatwedo1}
             alt="Coach Ryan Mitchell"
+            width={"auto"}
+            height={"auto"}
             className="w-full h-full object-cover"
           />
         </div>
@@ -63,6 +65,8 @@ const WhatWeDo = () => {
           <Image
             src={whatwedo2}
             alt="Coach Ryan Mitchell"
+            width={"auto"}
+            height={"auto"}
             className="w-full object-cover"
           />
         </div>
