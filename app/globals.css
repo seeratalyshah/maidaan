@@ -30,3 +30,23 @@
   display: flex !important;
   flex-direction: row !important; 
 }
+
+/* ===========================================================
+   GLOBAL  (whole site)     ––  always-visible slim scrollbar
+   =========================================================== */
+   html {
+    /* Firefox */
+    scrollbar-width: thin;                       /* slim bar        */
+    scrollbar-color: rgba(148,163,184,.5) transparent; /* slate-400 thumb */
+  }
+  
+  /* Chrome / Edge / Safari */
+  html::-webkit-scrollbar           { width: 6px; }            /* slim bar  */
+  html::-webkit-scrollbar-track     { background: transparent; }
+  html::-webkit-scrollbar-thumb     {
+    background-color: rgba(148,163,184,.5);     /* subtle thumb   */
+    border-radius: 9999px;
+  }
+  html::-webkit-scrollbar-button    { display: none; }         /* hide arrows */
+
+

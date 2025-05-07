@@ -168,21 +168,24 @@ export default function EditPlayerPage() {
   }
 
   return (
-    <div className="max-w-5xl mx-auto bg-white p-8 rounded-lg shadow">
+    <div className="max-w-6xl mx-auto">
       {/* back arrow */}
       <button
         type="button"
         onClick={() => router.push("/admin/players")}
-        className="flex items-center gap-1 text-gray-600 hover:text-gray-800 mb-6"
+        className="flex items-center gap-1 text-green-600 hover:text-gray-800 mb-6"
       >
         <ArrowLeft size={18} />
         Back
       </button>
       <h1 className="text-2xl font-bold mb-8">Edit Player</h1>
 
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="space-y-6 shadow-lg p-6 rounded-xl"
+      >
         {/* avatar */}
-        <div className="p-6 border rounded-lg bg-gray-50">
+        <div className="p-6 border rounded-lg bg-white">
           <label className="font-medium mb-2">Player Image</label>
           {preview && (
             <img
@@ -202,27 +205,30 @@ export default function EditPlayerPage() {
         {/* grid fields */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {FIELDS.map(({ label, name, type, options }) => {
-            const span = type === "textarea" ? "md:col-span-2" : "";
+            const colSpan = type === "textarea" ? "md:col-span-2" : "";
+            const baseInput =
+              "w-full h-11 rounded-md border border-gray-300 px-3 py-2 " +
+              "text-sm focus:outline-none focus:ring-2 focus:ring-green-600";
+
             return (
-              <div key={name} className={span}>
+              <div key={name} className={colSpan}>
                 <label className="block mb-2 font-medium">{label}</label>
+
                 {type === "textarea" ? (
                   <textarea
+                    rows={4}
                     {...register(name)}
-                    className="w-full border-b focus:border-green-600"
+                    className={`${baseInput} resize-none !h-28`}
                   />
                 ) : type === "select" ? (
-                  <select
-                    {...register(name)}
-                    className="w-full border-b focus:border-green-600"
-                  >
+                  <select {...register(name)} className={`${baseInput} pr-8`}>
                     <option value="">Select</option>
                     {options.map((o) => (
                       <option key={o}>{o}</option>
                     ))}
                   </select>
                 ) : type === "radio" ? (
-                  <div className="flex gap-6">
+                  <div className="flex gap-6 h-11 items-center">
                     {["Yes", "No"].map((v) => (
                       <label key={v} className="flex items-center gap-1">
                         <input type="radio" value={v} {...register(name)} /> {v}
@@ -231,9 +237,9 @@ export default function EditPlayerPage() {
                   </div>
                 ) : (
                   <input
-                    {...register(name)}
                     type={type}
-                    className="w-full border-b focus:border-green-600"
+                    {...register(name)}
+                    className={baseInput}
                   />
                 )}
               </div>
@@ -242,13 +248,13 @@ export default function EditPlayerPage() {
         </div>
 
         {/* new attachments */}
-        <div className="p-6 border rounded-lg bg-gray-50 space-y-4">
+        <div className="p-6 border rounded-lg bg-white space-y-4">
           <div className="flex justify-between items-center">
             <h3 className="font-medium">Add Attachments</h3>
             <button
               type="button"
               onClick={() => append({ file: undefined, label: "" })}
-              className="bg-green-600 text-white px-3 py-1 rounded"
+              className="bg-green-600 text-white hover:bg-green-600/90 px-3 py-1 rounded"
             >
               Add
             </button>
@@ -278,14 +284,14 @@ export default function EditPlayerPage() {
         <div className="flex gap-4 mt-6">
           <button
             disabled={saving}
-            className="bg-green-600 text-white px-6 py-2 rounded disabled:opacity-50"
+            className="bg-green-600 text-white hover:bg-green-600/90 px-6 py-2 rounded disabled:opacity-50"
           >
             {saving ? "Saving…" : "Save"}
           </button>
           <button
             type="button"
             onClick={() => router.push("/admin/players")}
-            className="border px-6 py-2 rounded"
+            className="border px-6 py-2 rounded hover:bg-gray-100"
           >
             Cancel
           </button>

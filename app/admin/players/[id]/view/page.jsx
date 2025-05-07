@@ -71,17 +71,17 @@ export default function PlayerDetails() {
   );
 
   return (
-    <div className="max-w-6xl mx-auto px-4 md:px-6 py-8">
+    <div className="max-w-6xl mx-auto">
       {/* back */}
       <button
         onClick={() => router.push("/admin/players")}
-        className="flex items-center gap-1 text-gray-600 hover:text-gray-800 mb-6"
+        className="flex items-center gap-1 text-green-600 hover:text-gray-800 mb-6"
       >
         <ArrowLeft size={18} /> Back
       </button>
 
       {/* card */}
-      <div className="bg-white shadow-xl rounded-2xl overflow-hidden">
+      <div className="bg-white shadow-lg rounded-2xl overflow-hidden">
         {/* header */}
         <div className="flex flex-col md:flex-row gap-6 p-8 bg-gray-200">
           {player.image_path ? (
@@ -105,7 +105,7 @@ export default function PlayerDetails() {
               <a
                 href={player.image_path}
                 download
-                className="inline-flex items-center gap-1 mt-4 bg-white/80 hover:bg-white/50 backdrop-blur px-4 py-1.5 rounded text-sm"
+                className="inline-flex items-center gap-1 mt-4 bg-green-600 text-white hover:bg-green-600/90 backdrop-blur px-4 py-1.5 rounded text-sm"
               >
                 <Download size={16} /> Download&nbsp;image
               </a>

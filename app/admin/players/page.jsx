@@ -3,13 +3,7 @@
 import { useState } from "react";
 import useSWR, { mutate } from "swr";
 import toast from "react-hot-toast";
-import {
-  Trash2,
-  UserRoundPen,
-  Loader2,
-  Download,
-  Eye,
-} from "lucide-react";
+import { Trash2, UserRoundPen, Loader2, Download, Eye } from "lucide-react";
 import Image from "next/image";
 
 const fetcher = (u) => fetch(u).then((r) => r.json());
@@ -28,7 +22,9 @@ export default function PlayersAdminPage() {
   async function reallyDelete() {
     setDeleting(true);
     try {
-      const res = await fetch(`/api/players/${confirmId}`, { method: "DELETE" });
+      const res = await fetch(`/api/players/${confirmId}`, {
+        method: "DELETE",
+      });
       if (res.ok) {
         toast.success("Deleted");
         mutate();
@@ -47,7 +43,7 @@ export default function PlayersAdminPage() {
     );
 
   return (
-    <div className="max-w-6xl mx-auto p-6">
+    <div className="max-w-6xl mx-auto">
       {/* ---- delete dialog (unchanged) ---- */}
       {confirmId && (
         <div className="fixed inset-0 flex items-center justify-center bg-black/40 z-50">
@@ -77,20 +73,22 @@ export default function PlayersAdminPage() {
       )}
 
       {/* ---- header ---- */}
-      <header className="flex justify-between mb-6">
-        <h1 className="text-3xl font-bold">Registered Players</h1>
-        <a
-          href="/api/players?format=csv"
-          className="bg-green-600 text-white px-4 py-2 rounded"
-        >
-          Export CSV
-        </a>
+      <header className="mb-6">
+        <h1 className="text-2xl font-semibold mb-4">Registered Players</h1>
+        <div className="flex justify-end">
+          <a
+            href="/api/players?format=csv"
+            className="bg-green-600 text-white hover:bg-green-600/90 px-4 py-2 rounded"
+          >
+            Export CSV
+          </a>
+        </div>
       </header>
 
       {/* ---- centred table ---- */}
       <table className="w-full border text-sm">
-        <thead className="bg-gray-200">
-          <tr className="text-center">
+        <thead className="bg-gray-100">
+          <tr className="text-left">
             <th className="px-4 py-3 w-14">Pic</th>
             <th className="px-4 py-3">Name</th>
             <th className="px-4 py-3">Email</th>
@@ -106,7 +104,10 @@ export default function PlayersAdminPage() {
             const files = p.attachments ?? [];
 
             return (
-              <tr key={p.id} className="border-t text-center bg-white hover:bg-gray-50">
+              <tr
+                key={p.id}
+                className="border-t text-left bg-white hover:bg-gray-50"
+              >
                 {/* avatar */}
                 <td className="px-4 py-3">
                   {p.image_path ? (

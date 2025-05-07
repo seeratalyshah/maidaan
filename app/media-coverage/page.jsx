@@ -1,11 +1,11 @@
 import FeaturedMedia from "@/app/media-coverage/sections/FeaturedMedia";
 import InternationalMedia from "@/app/media-coverage/sections/InternationalMedia";
-import MediaContact from "@/app/media-coverage/sections/MediaContact";
 import NationalMedia from "@/app/media-coverage/sections/NationalMedia";
 import SocialMedia from "@/app/media-coverage/sections/SocialMedia";
 import VideoSocialMediaCoverage from "@/app/media-coverage/sections/VideoMedia";
 import React from "react";
 import MediaHeroSection from "./sections/MediaHeroSection";
+import MediaInquiryForm from "./sections/media-inquiry/MediaInquiry";
 
 export const metadata = {
   title: "Media Coverage – Maidaan in the Global & National Spotlight",
@@ -46,7 +46,7 @@ const MediaCoverage = () => {
       <NationalMedia />
       <VideoSocialMediaCoverage />
       <SocialMedia />
-      <MediaContact />
+      <MediaInquiryForm />
     </div>
   );
 };
